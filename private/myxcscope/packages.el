@@ -90,6 +90,11 @@ Each entry is either:
            (format "pycscope -R -f '%s'"
                    (expand-file-name "cscope.out" directory))))))))
 
+(defun myxcscope/post-init-xcscope ()
+  (progn
+    (define-key cscope-list-entry-keymap (kbd "RET") 'cscope-select-entry-other-window)
+  )
+)
 ;(defun myxcscope/post-init-xcscope ()
 ;  (progn
 ;    (defvar cscope:map nil
