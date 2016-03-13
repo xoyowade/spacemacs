@@ -1,0 +1,9 @@
+# name: file header once
+# key: oncer
+# --
+#ifndef `(setq once-def (concat (concat "_" (replace-regexp-in-string "[^A-Z]" "_" (upcase (when (string-match ".*/hft/include/" buffer-file-name) (replace-match "src/" nil nil buffer-file-name))))) "_"))`
+#define `once-def`
+
+$0
+
+#endif /* `once-def` */

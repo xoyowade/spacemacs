@@ -94,6 +94,4 @@
   "Open the coresponding include or src file"
   (interactive)
   (setq open-file-name (change-filename-include-or-src buffer-file-name))
-  (if (file-exists-p open-file-name)
-    (find-file open-file-name)
-    (message (concat open-file-name " does not exist"))))
+  (find-file open-file-name))

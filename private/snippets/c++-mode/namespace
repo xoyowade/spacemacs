@@ -1,0 +1,5 @@
+# name: namespace ... { ... }
+# key: nsd
+# --
+namespace ${1:Name} {
+$0} // namespace ${1:$(yas-text)}

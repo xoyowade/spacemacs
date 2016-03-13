@@ -64,7 +64,7 @@ Each entry is either:
       (defun my-c-mode-common-hook()
         (setq tab-width 4 indent-tabs-mode nil)
         (setq c-basic-offset 4)
-        (c-set-offset 'case-label '0) ; case label
+      ;  (c-set-offset 'case-label '0) ; case label
         (c-set-offset 'inextern-lang '0) ; extern block
       ;  (c-set-offset 'inline-open 0)
       ;  (c-set-offset 'friend '-)
